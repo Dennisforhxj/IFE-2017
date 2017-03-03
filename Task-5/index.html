@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>task-5</title>
+	<link rel="stylesheet" type="text/css" href="reset.css">
+	<style type="text/css">
+		html,body{width: 100%}
+        header,footer{width: 100%;height: 70px;background-color: #000;opacity: .8;}
+        header ul{float: right;font: 15px 'Microsoft YaHei'; color: #fff;}
+        header ol{float: right;margin-right: 20px; line-height: 70px;}
+        header img{margin-left: 20px;}
+        .g-doc{overflow: auto;padding: 20px; background-color: #ddd;}
+        .m-fm{position: relative; margin-left: -460px;padding: 20px; float: right;width: 400px;background-color: #fff;}
+        .m-fm form{margin: 0 auto; width: 80%;}
+        .m-fm h2{margin-bottom: 20px; font: bold 25px/1.5em 'Microsoft YaHei';}
+        .m-fm div{height: 40px;}
+        .m-fm label{display: inline-block; margin-right: 10px; width: 120px;text-align: right;font: 14px 'Microsoft YaHei';}
+        .m-fm span{font-size: 14px; color: #888;}
+        .m-fm input[type="text"]{height: 20px;}
+        .m-fm textarea{width: 180px;height: 50px;}
+        .m-fm .duiqi{vertical-align: top;}
+        .m-fm button{ margin-top: 10px; width: 100%;height: 30px; border: 0;border-radius: 8px;font: 14px 'Microsoft YaHei'; color: #fff; background-color: #0044bb;}
+        .m-bd{float: left;width: 100%;}
+        .m-bd .bd1,.bd2,.bd3,.bd4{margin: 0 460px 0 0;padding: 20px; background-color: #fff;font: 12px/1.5em 'Microsoft YaHei';}
+        .m-bd .bd2,.bd3,.bd4{margin-top: 20px;}
+        .m-bd h1{font: bold 25px/1.5em 'Microsoft YaHei';}
+        .m-bd h2{font-size: 20px; line-height: 1.5em; color: #888;}
+        .m-bd h3{font-size: 15px; line-height: 1.5em; color: #888;}
+        .m-bd img{margin: 20px 0 20px 20px; }
+        .m-bd ol{margin: 10px 0 10px 20px;font-size: 15px;}
+        .m-bd .bd4 table{ width: 80%;font-size: 13px;}
+        .m-bd .bd4 tr{border-top: 1px solid #fff;}
+        .m-bd .bd4 th{background-color: #000;opacity: .8;color: #fff;}
+        .m-bd .bd4 th,td{border-right: 1px solid #fff;padding-left: 10px;height: 25px;}
+        .m-bd .bd4 td{background-color: #ddd;}
+        footer{text-align: center;font: 14px 'Microsoft YaHei'; color: #fff;}
+        footer span{line-height: 70px;}
+	</style>
+</head>
+<body>
+    <header>
+    	<img src="img/baidu.png">
+    	<ul>
+    		<ol>导航链接一</ol>
+    		<ol>导航链接一</ol>
+    		<ol>导航链接一</ol>
+    		<ol>导航链接一</ol>
+    	</ul>
+    </header>
+	<div class="g-doc">
+		<div class="m-bd">
+			<div class="bd1">
+				<h1>AJAX开发</h1>
+				<h2>AJAX 是一种用于创建快速动态网页的技术。</h2>
+				<h3>AJAX即异步JavaScript和XML，是指一种创建交互式网页应用的网页开发技术。</h3>
+				<p>通过在后台与服务器进行少量数据交换，AJAX 可以使网页实现异步更新。这意味着可以在不重新加载整个网页的情况下，对网页的某部分进行更新。传统的网页（不使用AJAX）如果需要更新内容，必须重载整个网页页面。AJAX不是一种新的编程语言，而是一种用于创建更好更快以及交互性更强的Web应用程序的技术。</p>
+				<p>使用Javascript向服务器提出请求并处理响应而不阻塞用户！核心对象XMLHTTPRequest。通过这个对象，您的JavaScript可在不重载页面的情况与Web服务器交换数据，即在不需要刷新页面的情况下，就可以产生局部刷新的效果。AJAX 在浏览器与 Web 服务器之间使用异步数据传输（HTTP 请求），这样就可使网页从服务器请求少量的信息，而不是整个页面。</p>
+				<img src="img/1.jpg">
+				<p>AJAX 可使因特网应用程序更小、更快，更友好。AJAX 是一种独立于 Web 服务器软件的浏览器技术。　AJAX 基于下列 Web 标准：JavaScriptXMLHTMLCSS在 AJAX 中使用的 Web 标准已被良好定义，并被所有的主流浏览器支持。AJAX应用程序独立于浏览器和平台。Web应用程序较桌面应用程序有诸多优势；它们能够涉及广大的用户，它们更易安装及维护，也更易开发。不过，因特网应用程序并不像传统的桌面应用程序那样完善且友好。通过AJAX，因特网应用程序可以变得更完善，更友好。</p>
+			</div>
+			<div class="bd2">
+				<h1>JSON</h1>
+				<h2>JSON(JavaScript Object Notation) 是一种轻量级的数据交换格式</h2>
+				<h3> JSON采用完全独立于语言的文本格式，但是也使用了类似于C语言家族的习惯（包括C、C++、C#、Java、JavaScript、Perl、Python等）</h3>
+				<p>该技术在1998年前后得到了应用。允许客户端脚本发送HTTP请求（XMLHTTP）的第一个组件由Outlook Web Access小组写成。该组件原属于微软Exchange Server，并且迅速地成为了Internet Explorer 4.0的一部分。部分观察家认为，Outlook Web Access是第一个应用了Ajax技术的成功的商业应用程序，并成为包括Oddpost的网络邮件产品在内的许多产品的领头羊。但是，2005年初，许多事件使得Ajax被大众所接受。Google在它著名的交互应用程序中使用了异步通讯，如Google、Google地图、Google搜索建议、Gmail等。Ajax这个词由《Ajax: A New Approach to Web Applications》一文所创，该文的迅速流传提高了人们使用该项技术的意识。另外，对Mozilla/Gecko的支持使得该技术走向成熟，变得更为易用。</p>
+				<p>AJAX前景非常乐观，可以提高系统性能，优化用户界面。AJAX现有直接框架AjaxPro，可以引入AjaxPro.2.dll文件，可以直接在前台页面JS调用后台页面的方法。但此框架与FORM验证有冲突。另外微软也引入了AJAX组件，需要添加AjaxControlToolkit.dll文件，可以在控件列表中出现相关控件。</p>
+				<img src="img/1.jpg" alt="">
+				<ul>
+					<ol>JSON 语法</ol>
+					<ol>基础结构</ol>
+					<ol>基础示例</ol>
+				</ul>
+			</div>
+			<div class="bd3">
+				<h1>图片</h1>
+				<img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg"><img src="img/2.jpg">
+			</div>
+			<div class="bd4">
+				<h1>jQuery</h1>
+				<h2>jQuery是一个快速、简洁的JavaScript框架，是一个优秀的JavaScript代码库</h2>
+				<h3>jQuery设计的宗旨是写更少的代码，做更多的事情。它封装JavaScript常用的功能代码，提供一种简便的JavaScript设计模式，优化HTML文档操作、事件处理、动画设计和Ajax交互。</h3>
+				<ul>
+					<ol>1.发展历程</ol>
+					<ol>2.编程开发</ol>
+					<ol>3.语言特点</ol>
+				</ul>
+				<span>具有独特的链式语法和短小清晰的多功能接口；具有高效灵活的css选择器，并且可对CSS选择器进行扩展；拥有便捷的插件扩展机制和丰富的插件。jQuery兼容各种主流浏览器.</span>
+				<table>
+					<tbody>
+						<tr><th>表头</th><th>表头</th><th class="biao">表头</th></tr>
+						<tr><td>javascript</td><td>javascript</td><td class="biao">javascript</td></tr>
+						<tr><td>javascript</td><td>javascript</td><td class="biao">javascript</td></tr>
+						<tr><td>javascript</td><td>javascript</td><td class="biao">javascript</td></tr>
+						<tr><td>javascript</td><td colspan="2">总计</td></tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="m-fm">
+		    <h2>账号注册：</h2>
+			<form action="#">
+				<div><label for="y1">请输入邮箱地址:</label><input type="text" id="y1" name=""></div>
+				<div><label></label><span>邮箱地址请按要求格式输入</span></div>
+				<div><label for="y2">请输入密码:</label><input type="text" id="y2" name=""></div>
+				<div><label for="y3">请输入重复密码:</label><input type="text" id="y3" name=""></div>
+				<div><label></label><span>密码为6-16位英文数字</span></div>
+				<div><label>性别</label><input type="radio" name="sex" checked>男 <input type="radio" name="sex">女</div>
+				<div><label>城市</label>
+                	<select>
+                		<option>北京</option>
+                		<option>上海</option>
+                		<option>成都</option>
+                	</select>
+				</div>
+				<div><label>爱好</label><input type="checkbox" name="">运动 <input type="checkbox" name="">计算机 <input type="checkbox" name="">科学</div>
+				<label class="duiqi">个人描述:</label><textarea></textarea> <br>
+				<div><button>提交</button></div>
+			</form>
+		</div>
+	</div>
+	<footer>
+		<span>版权所有&copy;</span>
+	</footer>
+</body>
+</html>
