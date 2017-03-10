@@ -18,19 +18,22 @@
   ["成都", 90],
   ["西安", 100]
 ]; 
+
+ (function(){
  	var ul=document.getElementById("biao");
- 	aqiData.sort(function(x1,x2){
+ 	aqiData.filter(function(x){
+ 		return x[1]>=60;
+ 	}).sort(function(x1,x2){
  		if(x1[1]>x2[1]) return -1;
- 		if(x1[1]<x2[1]) return 1;
+ 		if(x1[1]>x2[1]) return 1;
  		return 0;
- 	});
-    for(var i=0;i<aqiData.length;i++){
-    	if(aqiData[i][1]>=60){
-            var li=document.createElement('li');
-            li.innerHTML="第"+(i+1)+"名："+aqiData[i][0]+"&#160;&#160;&#160;&#160; 空气指数："+aqiData[i][1];
-            ul.appendChild(li);
-    	}
-    }
+ 	}).forEach(function(x){
+ 		var i=1;
+ 		var li=document.createElement('li');
+ 		li.innerHTML="第"+(i++)+"名："+x[0]+"&#160;&#160;&#160;指数："+x[1];
+ 		ul.appendChild(li);
+ 	})
+   })();
 	</script>
 </body>
 </html>
