@@ -21,13 +21,13 @@
 
  (function(){
  	var ul=document.getElementById("biao");
- 	aqiData.filter(function(x){
+ 	aqiData.filter(x=>{
  		return x[1]>=60;
- 	}).sort(function(x1,x2){
+ 	}).sort((x1,x2)=>{
  		if(x1[1]>x2[1]) return -1;
  		if(x1[1]>x2[1]) return 1;
  		return 0;
- 	}).forEach(function(x){
+ 	}).forEach(x => {
  		var i=1;
  		var li=document.createElement('li');
  		li.innerHTML="第"+(i++)+"名："+x[0]+"&#160;&#160;&#160;指数："+x[1];
